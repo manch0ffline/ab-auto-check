@@ -1,0 +1,25 @@
+.price-card {
+  transition: all 0.2s ease;
+  padding: 30px;
+  border: 2px solid #202124;
+  border-radius: 10px;
+  width: 230px;
+  background-color:  $yellow-dark;
+  color: $white-color;
+  box-shadow: 0px 0px 7px 1px rgb(0, 0, 0);
+
+
+  &:hover {
+    transform: scale(1.03);
+    background-color:  #25251e;
+    border: 1px solid $main-yellow-color;
+  }
+
+  &__btn{
+    padding-block: 7px;
+    border: none;
+    background-color: $dark-gray-yellow;
+    border-radius: 10px;
+      color: #fff;
+  }
+}

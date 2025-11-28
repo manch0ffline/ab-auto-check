@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@import './styles/variables.scss';
+@import './styles/icon.scss';
+@import './styles/mixins.scss';
+
+@import './App.scss';
+@import './components/Header/Header.module.scss';
+@import './components/Navigation/Navigation.module.scss';
+@import './components/TopBar/TopBar.module.scss';
+@import './components/Menu/Menu.module.scss';
+@import './components/ChangeLanguage/ChangeLanguage.module.scss';
+@import './components/Services/Services.module.scss';
+@import './components/Prices/Prices.module.scss';
+@import './components/PriceCard/PriceCard.module.scss';
+
+* {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 380px;
+  scroll-behavior: smooth;
+
+  &:has(.menu:target) {
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,31 @@
+.nav {
+  &__link {
+    color: #fff;
+    height: 100%;
+  }
+
+  &__list {
+
+
+    font-size: 19px;
+
+    @media (max-width: 992px) {
+      font-size: 30px;
+    }
+
+  }
+
+  &__item {
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    color: #fff;
+    border: 2px solid #ffffff00;
+    height: 100%;
+    padding: 5px 20px;
+    border-radius: 30px;
+
+    &:hover {
+      border: 2px solid $main-yellow-color;
+    }
+  }
+}

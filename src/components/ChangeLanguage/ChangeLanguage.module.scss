@@ -1,0 +1,14 @@
+.change-language {
+  &__button  {
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background-color: #00000000;
+    color: #fff;
+    border: 1px solid $main-yellow-color;
+
+    &:hover {
+      background-color: #5e5d5d8b;
+    }
+  }
+}

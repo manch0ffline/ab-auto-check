@@ -1,0 +1,38 @@
+{
+  "header": {
+    "title": "Kompleksowy <br /> dobór samochodu 'pod klucz'",
+    "overview": "Pomagamy dobrać idealny <br /> samochód według Twoich kryteriów"
+  },
+  "button": {
+    "submitRequest": "Złóż wniosek"
+  },
+  "services": {
+    "title": "Nasze usługi",
+    "accordion": {
+      "sectionOne": {
+        "title": "Kompleksowy dobór samochodu 'pod klucz'",
+        "description": "Zajmujemy się całym procesem: wyszukiwanie, sprawdzenie, diagnostyka, negocjacje, sprawdzenie dokumentów i obsługa transakcji. Klient otrzymuje tylko najlepsze opcje oraz finalny raport z wybranego samochodu"
+      },
+      "sectionTwo": {
+        "title": "Jednorazowe sprawdzenie wybranego samochodu",
+        "description": "Odwiedzamy konkretne ogłoszenie. Na miejscu sprawdzamy nadwozie, silnik, zawieszenie, elektronikę, przeprowadzamy diagnostykę, mierzymy lakier i wydajemy werdykt: brać czy nie brać."
+      },
+      "sectionThree": {
+        "title": "Diagnostyka przed zakupem",
+        "description": "Skupiamy się na stanie technicznym. Określamy ukryte problemy, rzeczywiste inwestycje w najbliższym czasie, oceniamy ryzyko. Odpowiednie, jeśli klient jest prawie zdecydowany."
+      },
+      "sectionFour": {
+        "title": "Dobór samochodu pod budżet",
+        "description": "Podajesz kwotę — my dobieramy optymalne opcje w tej cenie. Naszym zadaniem jest znalezienie najbardziej niezawodnego i sprawnego samochodu bez przepłacania."
+      },
+      "sectionFive": {
+        "title": "Sprawdzanie dokumentów i legalności",
+        "description": "Sprawdzamy VIN, historię serwisową, zapisy ubezpieczeniowe, udział w wypadkach, obciążenia, leasingi, zatrzymania. Gwarantujemy, że samochód jest legalny i bezpieczny do zakupu."
+      },
+      "sectionSix": {
+        "title": "Konsultacje online przed zakupem",
+        "description": "Oceniany ogłoszenie zdalnie: po zdjęciach, opisie, wideo i historii. Mówimy od razu, czy warto jechać obejrzeć, czy lepiej nie tracić czasu."
+      }
+    }
+  }
+}

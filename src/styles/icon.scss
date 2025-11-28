@@ -1,0 +1,56 @@
+.icon {
+  height: 32px;
+  width: 32px;
+  background-size: cover;
+
+  &--close {
+    background-image: url('../images/icons/close-icon.png');
+  }
+
+  &--menu {
+    background-image: url('../images/icons/menu-icon.png');
+  }
+
+  &--car-diagnostics {
+    background-image: url('../images/icons/car-diagnostics-icon.png');
+  }
+
+  &--key {
+    background-image: url('../images/icons/key-icon.png');
+  }
+
+  &--money {
+    background-image: url('../images/icons/money-icon.png');
+  }
+
+  &--support {
+    background-image: url('../images/icons/support-icon.png');
+  }
+
+  &--verification {
+    background-image: url('../images/icons/verification-icon.png');
+  }
+
+  &--repeat-once {
+    background-image: url('../images/icons/repeat-once-icon.png');
+  }
+
+  &--go-up {
+    height: 20px;
+    width: 20px;
+
+    background-image: url('../images/icons/go-up-icon.png');
+  }
+
+  &-- {
+    background-image: url('../images/icons');
+  }
+
+  &-- {
+    background-image: url('../images/icons');
+  }
+
+  &-- {
+    background-image: url('../images/icons');
+  }
+}
