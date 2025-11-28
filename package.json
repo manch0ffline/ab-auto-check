@@ -4,14 +4,18 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+   "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+    
   },
   "dependencies": {
     "bootstrap": "^5.3.8",
     "classnames": "^2.5.1",
+    "gh-pages": "^6.3.0",
     "gsap": "^3.13.0",
     "i18next": "^25.6.3",
     "mathjs": "^15.1.0",
