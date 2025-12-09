@@ -1,5 +1,5 @@
 import TopBar from '../TopBar/TopBar';
-import { Trans, useTranslation,  } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 
 function Header() {
   const { t } = useTranslation();

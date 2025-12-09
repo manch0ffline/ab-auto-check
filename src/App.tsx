@@ -4,6 +4,17 @@ import Prices from './components/Prices/Prices';
 import Services from './components/Services/Services';
 import './i18n';
 
+function goUp() {
+  const scrollToTopBtn = document.getElementById('scrollToTopBtn') as HTMLElement;
+
+  scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  });
+}
+
 function App() {
   return (
     <>
@@ -12,7 +23,11 @@ function App() {
         <Header />
         <main className="app__main d-flex flex-column gap-5">
           <a href="#" className="app__go-up">
-            <div className='icon icon--go-up'></div>
+            <div
+              className="icon icon--go-up "
+              id="scrollToTopBtn"
+              onClick={() => goUp()}
+            ></div>
           </a>
 
           <div className="app__line"></div>

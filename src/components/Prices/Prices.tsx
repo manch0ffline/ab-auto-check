@@ -9,12 +9,12 @@ function Prices() {
             <h2 className="fs-1 text-center">Цены</h2>
             <p className="prices__description text-center">
               Мы предлагаем прозрачное ценообразование без скрытых платежей. Вы
-              можете выбрать подходящий тариф для своих нужд.
+              можете выбрать подходящий тариф для своих нужд
             </p>
           </div>
           <div className="prices__cards d-flex justify-content-center gap-5 w-100 flex-wrap">
             <PriceCard />
-            <PriceCard />
+            <PriceCard recommended={true} />
             <PriceCard />
           </div>
         </div>

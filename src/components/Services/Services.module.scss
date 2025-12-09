@@ -6,7 +6,7 @@
     content: '';
     position: absolute;
     top: 10%;
-    left: 30%;
+    left: 70%;
     box-shadow: 0px 0px 700px 200px #acb4381f;
     z-index: 1;
   }
@@ -14,8 +14,8 @@
   &::after {
     content: '';
     position: absolute;
-    bottom: 10%;
-    right: 30%;
+    bottom: 15%;
+    right: 50%;
     box-shadow: 0px 0px 700px 200px #8e95301f;
      z-index: 1;
   }
