@@ -1,30 +1,154 @@
-import PriceCard from "../PriceCard/PriceCard";
+// import cn from 'classnames';
+// import type { Service } from '../../types/ServiceType';
 
-function Prices() {
-  return (
-    <div className="prices" id="prices">
-      <div className="container">
-        <div className="prices__content d-flex flex-column align-items-center gap-3">
-          <div className="prices__info">
-            <h2 className="fs-1 text-center" style={{
-              color: '#e5c053'
-            }}>Цены</h2>
-            <p className="prices__description text-center fw-light" style={{
-              color: '#ded7bbff'
-            }}>
-              Мы предлагаем прозрачное ценообразование без скрытых платежей. Вы
-              можете выбрать подходящий тариф для своих нужд
-            </p>
-          </div>
-          <div className="prices__cards d-flex justify-content-center gap-5 w-100 flex-wrap">
-            <PriceCard />
-            <PriceCard recommended={true} />
-            <PriceCard />
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
+// const services: Service[] = [
+//   {
+//     id: 1,
+//     title: 'Разовый выезд и осмотр автомобиля',
+//     price: 'от 299zł +20% от торга',
+//     description: [
+//       'Проверка кузова толщиномером',
+//       'Осмотр двигателя и подвески',
+//       'Проверка коробки передач',
+//       'Компьютерная диагностика OBD2',
+//       'Проверка всех систем на ошибки',
+//       'Проверка технического состояния',
+//       'Полное описание состояния автомобиля',
+//       'Тест-драйв',
+//       'Проверка VIN + история',
+//       'Фото- и видеоотчёт',
+//       'Рекомендации по покупке',
+//     ],
+//   },
+//   {
+//     id: 2,
+//     title: 'Комплексная техническая проверка автомобиля перед покупкой',
+//     price: 'по запросу',
+//     description: [
+//       'Проверка кузова толщиномером',
+//       'Осмотр двигателя и подвески',
+//       'Проверка коробки передач',
+//       'Компьютерная диагностика OBD2',
+//       'Проверка всех систем на ошибки',
+//       'Проверка технического состояния',
+//       'Полное описание состояния автомобиля',
+//       'Тест-драйв',
+//       'Проверка VIN + история',
+//       'Фото- и видеоотчёт',
+//       'Рекомендации по покупке',
+//     ],
+//   },
+//   {
+//     id: 3,
+//     title: 'Автоподбор “Под ключ”',
+//     price: 'от 1200 zł +20% от торга',
+//     description: [
+//       'Анализ рынка под ваш бюджет',
+//       '5–10 проверенных вариантов',
+//       'Звонки продавцам',
+//       'Отсев слабых вариантов',
+//       'Полные выезды и осмотры',
+//       'Диагностика + проверка VIN',
+//       'Торг с продавцом',
+//       'Сопровождение сделки',
+//       'Подготовка документов',
+//       'Гарантия: мы найдём лучший вариант по цене/качеству',
+//     ],
+//   },
+//   {
+//     id: 4,
+//     title: 'Премиум подбор автомобиля',
+//     price: 'от 2490 zł',
+//     description: [
+//       'Всё, что в подборе “Под ключ”',
+//       'Персональный менеджер',
+//       'Детейлинг (полировка, химчистка) перед выдачей',
+//       'Помощь со страховкой',
+//       'Полная консультация по эксплуатации',
+//       'Личное сопровождение клиента весь день',
+//     ],
+//   },
+//   {
+//     id: 5,
+//     title: 'Эксперт на день',
+//     price: '750 zł',
+//     description: [
+//       'Выезд специалиста',
+//       'Неограниченное количество осмотров авто в течение 10 часов',
+//       'Полная диагностика каждого авто: кузов, двигатель, подвеска, КПП, электрика, тест-драйв, компьютерная диагностика OBD2, проверка VIN + юридическая история',
+//       'Анализ объявлений перед поездкой',
+//       'Согласование маршрута по времени',
+//       'Торг с продавцами',
+//       'Рекомендации по каждому авто',
+//       'Итоговый совет: какой автомобиль выгоднее брать',
+//     ],
+//   },
+//   {
+//     id: 6,
+//     title: 'Выезд за пределы Познани',
+//     price: '1.20 zł / км',
+//     description: ['Стоимость выезда за пределы города'],
+//   },
+// ];
 
-export default Prices;
+// function Prices() {
+//   return (
+//     <div className="prices" id="prices">
+//       <div className="container">
+//         <div className="prices__content d-flex flex-column align-items-center gap-3">
+//           <div className="prices__info">
+//             <h2
+//               className="fs-1 text-center"
+//               style={{
+//                 color: '#e5c053',
+//               }}
+//             >
+//               Цены
+//             </h2>
+//             <p
+//               className="prices__description text-center fw-light"
+//               style={{
+//                 color: '#ded7bbff',
+//               }}
+//             >
+//               Мы предлагаем прозрачное ценообразование без скрытых платежей. Вы
+//               можете выбрать подходящий тариф для своих нужд
+//             </p>
+//           </div>
+//           <div className="accordion w-100" id="accordionPrices">
+//             {services.map((service) => (
+//               <div className="accordion-item" key={service.id}>
+//                 <h2 className="accordion-header">
+//                   <button
+//                     className="accordion-button"
+//                     type="button"
+//                     data-bs-toggle="collapse"
+//                     data-bs-target={`#collapse${service.id}`}
+//                     aria-expanded="true"
+//                     aria-controls={`#collapse${service.id}`}
+//                   >
+//                     <div className="d-flex  w-100">
+//                       <span className="w-50"> {service.title}</span>
+//                       <span>
+//                         <strong>Цена:</strong> {service.price}
+//                       </span>
+//                     </div>
+//                   </button>
+//                 </h2>
+//                 <div
+//                   id={`collapse${service.id}`}
+//                   className={cn('accordion-collapse collapse', {'show': service.id === 1,})}
+//                   data-bs-parent="#accordionPrices"
+//                 >
+//                   <div className="accordion-body">{service.description}</div>
+//                 </div>
+//               </div>
+//             ))}
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Prices;

@@ -1,7 +1,8 @@
 import Header from './components/Header/Header';
 import Menu from './components/Menu/Menu';
-import Prices from './components/Prices/Prices';
+// import Prices from './components/Prices/Prices';
 import Services from './components/Services/Services';
+import ServicesDetails from './components/ServicesDetails/ServicesDetails';
 import './i18n';
 
 function goUp() {
@@ -32,7 +33,8 @@ function App() {
 
           <div className="app__line"></div>
           <Services />
-          <Prices />
+          <ServicesDetails />
+          {/* <Prices /> */}
         </main>
       </div>
     </>

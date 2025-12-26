@@ -1,0 +1,88 @@
+.services-details {
+  background-color: $yellow-light;
+
+  & .accordion-button {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 16px 20px;
+  }
+
+  & .accordion-button:not(.collapsed) {
+    background-color: #eaeac9;
+    color: #000000;
+  }
+
+  & .campaigns-accordion {
+    .accordion-button {
+      font-size: 14px;
+      font-weight: 500;
+      padding: 16px 20px;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: #1f1f1f;
+      color: #09b850;
+    }
+  }
+
+  & .accordion-body {
+    background-color: #fefef9;
+  }
+
+  &__title {
+    color: $yellow-dark;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    & p {
+      padding-left: 25px;
+      position: relative;
+      color: #000000;
+      margin: 0;
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 2px;
+        height: 15px;
+        width: 15px;
+        background-image: url('../../images/icons/check-mark.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  &__icon {
+    height: 120px;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__salesman-info {
+     color: $yellow-dark;
+     
+    & span {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    & p {
+      margin: 0;
+      font-weight: 500;
+    }
+  }
+}
