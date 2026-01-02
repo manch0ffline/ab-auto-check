@@ -19,25 +19,17 @@ const Navigation = () => {
         <li className="nav__item">
           <a
             className="nav__link  d-flex align-items-center text-decoration-none"
-            href="#prices"
+            href="#services-details"
           >
-            Цены
+           Подробнее
           </a>
         </li>
         <li className="nav__item">
           <a
             className="nav__link  d-flex align-items-center text-decoration-none"
-            href="#about-us"
+            href="#contacts"
           >
-            Blog
-          </a>
-        </li>
-        <li className="nav__item">
-          <a
-            className="nav__link  d-flex align-items-center text-decoration-none"
-            href="#contact-us"
-          >
-            Contact us
+            Контакты
           </a>
         </li>
       </ul>

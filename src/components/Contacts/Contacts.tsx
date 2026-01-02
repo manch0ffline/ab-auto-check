@@ -1,7 +1,7 @@
 function Contacts() {
   return (
     <div className="contacts" id="contacts">
-      <div className="container d-flex flex-column gap-4 services__container">
+      <div className="container d-flex flex-column gap-5 services__container">
         <div className="">
           <h2 className="fs-1 contacts__title text-center">
             Связатся c AB AutoCheck
