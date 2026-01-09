@@ -1,0 +1,46 @@
+.footer {
+  background: linear-gradient(180deg,
+      $yellow-dark 0%,
+      #181913 40%,
+      #19170d 100%);
+
+  &__title {
+    color: #e5c053;
+  }
+
+  &__main-color {
+    color: #cfcfcf;
+  }
+
+  &__hr {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg,
+        transparent,
+        rgba(240, 230, 140, 0.825),
+        transparent);
+  }
+
+  &__link {
+    font-weight: 600;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: #f0e68c;
+      text-shadow: 0 0 6px rgba(240, 230, 140, 0.25);
+    }
+  }
+
+  &__highlight {
+    color: #b6bb9c;
+  }
+
+  &__main-text {
+    font-size: 16px;
+  }
+
+  &__sub-title {
+    font-size: 16px;
+    color: #9a9a9a;
+  }
+}

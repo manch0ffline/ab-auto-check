@@ -2,7 +2,7 @@ import { services } from '../../data';
 
 function ServicesDetails() {
   return (
-    <div className="services-details w-100 py-5" id='services-details'>
+    <div className="services-details w-100 py-5 px-3" id='services-details'>
       <div className="container d-flex flex-column gap-4">
         <h2 className="fs-1 services-details__title text-center ">
           Детали подбора

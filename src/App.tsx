@@ -1,4 +1,5 @@
 import Contacts from './components/Contacts/Contacts';
+import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Menu from './components/Menu/Menu';
 // import Prices from './components/Prices/Prices';
@@ -20,7 +21,7 @@ function goUp() {
 function App() {
   return (
     <>
-      <div className="app">
+      <div className="app x">
         <Menu />
         <Header />
         <main className="app__main d-flex flex-column gap-5">
@@ -36,7 +37,7 @@ function App() {
           <Services />
           <ServicesDetails />
           <Contacts />
-          {/* <Prices /> */}
+          <Footer />
         </main>
       </div>
     </>

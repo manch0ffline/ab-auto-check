@@ -35,7 +35,7 @@ const Services = () => {
                   </div>
                 </div>
                 <div className="d-flex flex-column">
-                  <a href='#services-details' className="services__link text-end">{`Подробнее >`}</a>
+                  <a href='#services-details' className="services__link text-center">{`Подробнее >`}</a>
                   <button className="services__btn">Заказать</button>
                 </div>
               </div>

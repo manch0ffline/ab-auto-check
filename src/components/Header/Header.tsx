@@ -6,7 +6,7 @@ function Header() {
 
   return (
     <header className="header">
-      <div className="container d-flex flex-column h-100 text-white">
+      <div className="container d-flex flex-column h-100 text-white px-3">
         <TopBar />
 
         <div className="header__content d-flex flex-column justify-content-center gap-5">

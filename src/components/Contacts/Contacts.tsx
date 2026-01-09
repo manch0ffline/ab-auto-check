@@ -17,7 +17,7 @@ function Contacts() {
           </p>
         </div>
         <div className="contacts__blocks row g-3">
-          <div className="col-12 col-md-6 col-xl-3">
+          <div className="col-12 col-lg-6 col-xxl-3">
             <div className="contacts__block d-flex gap-3  justify-content-center">
               <div className="contacts__icon icon--insta"></div>
               <div className="">
@@ -32,7 +32,7 @@ function Contacts() {
               </div>
             </div>
           </div>
-          <div className="col-12 col-md-6 col-xl-3">
+          <div className="col-12 col-lg-6 col-xxl-3">
             <div className="contacts__block d-flex gap-3 justify-content-center">
               <div className="contacts__icon icon--facebook"></div>
               <div className="">
@@ -47,7 +47,7 @@ function Contacts() {
               </div>
             </div>
           </div>
-          <div className="col-12 col-md-6 col-xl-3">
+          <div className="col-12 col-lg-6 col-xxl-3">
             <div className="contacts__block d-flex gap-3 justify-content-center">
               <div className="contacts__icon icon--telegram"></div>
               <div className="">
@@ -62,7 +62,7 @@ function Contacts() {
               </div>
             </div>
           </div>
-          <div className="col-12 col-md-6 col-xl-3">
+          <div className="col-12 col-lg-6 col-xxl-3">
             <div className="contacts__block d-flex gap-3 justify-content-center">
               <div className="contacts__icon icon--phone"></div>
               <div className="">
