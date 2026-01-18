@@ -98,7 +98,7 @@
   &__price {
     font-size: 18px;
 
-    & > span {
+    &>span {
       color: $main-yellow-color;
     }
   }
@@ -115,23 +115,11 @@
   }
 
   &__btn {
-    transition: background-color 0.2s ease;
+    width: 40%;
     text-decoration: none;
     text-align: center;
-    width: 50%;
     padding-block: 7px;
-    border: none;
-    background-color: transparent;
-    border-radius: 10px;
-    border: 1px solid #c8b685;
-    color: #f7fbe4;
 
-    &--details {}
-
-    &--order {}
-
-    &:hover {
-      background-color: $main-yellow-color;
-    }
+    @include button();
   }
 }

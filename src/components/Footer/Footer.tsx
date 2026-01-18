@@ -1,4 +1,9 @@
-function Footer() {
+import type React from 'react';
+type Props = {
+  setPrivacyPolicy: (el: boolean) => void;
+};
+
+const Footer: React.FC<Props> = ({ setPrivacyPolicy }) => {
   return (
     <footer className="footer w-100 py-5 px-3" id="footer">
       <div className="container d-flex flex-column gap-4 ">
@@ -22,19 +27,19 @@ function Footer() {
             <h4 className="m-0 footer__title fs-3">Навигация</h4>
             <div className="footer__nav d-flex flex-column gap-2">
               <a
-                href=""
+                href="#services"
                 className="footer__main-color text-decoration-none text-uppercase footer__link footer__main-text"
               >
                 Наши услуги
               </a>
               <a
-                href=""
+                href="#services-details"
                 className="footer__main-color text-decoration-none text-uppercase footer__link footer__main-text"
               >
                 Подробнее
               </a>
               <a
-                href=""
+                href="#contacts"
                 className="footer__main-color text-decoration-none text-uppercase footer__link footer__main-text"
               >
                 Контакты
@@ -50,14 +55,16 @@ function Footer() {
               <p className=" footer__sub-title m-0 mt-2 ">
                 Среднее время ответа:
               </p>
-              <span className="footer__main-color m-0 footer__main-text">10-15 минут</span>
+              <span className="footer__main-color m-0 footer__main-text">
+                10-15 минут
+              </span>
             </div>
           </div>
           <div className="footer_result d-flex flex-column gap-2">
             <h4 className="m-0 footer__title fs-3">Наши результаты</h4>
             <div className="">
               <p className=" footer__main-color m-0 footer__main-text">
-                <span className="footer__highlight ">400+ </span>провереных атво
+                <span className="footer__highlight ">400+ </span>провереных авто
               </p>
 
               <p className="footer__main-color m-0 footer__main-text">
@@ -72,8 +79,10 @@ function Footer() {
         <div className="footer__bottom d-flex justify-content-center flex-column gap-2 align-items-center">
           <div className="d-flex flex-column flex-md-row  gap-md-3 align-items-center">
             <a
-              href=""
-              className="footer__link footer__sub-title text-decoration-none"
+              className="footer__link footer__sub-title text-decoration-none "
+              onClick={() => {
+                setPrivacyPolicy(true);
+              }}
             >
               Политика конфиденциальности
             </a>
@@ -89,6 +98,6 @@ function Footer() {
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

@@ -24,6 +24,7 @@
   &__link {
     font-weight: 600;
     transition: color 0.2s ease;
+    cursor: pointer;
 
     &:hover {
       color: #f0e68c;

@@ -1,0 +1,14 @@
+@mixin button($borderRad: 30px, $borderWid: 2px) {
+  transition: all 0.2s ease;
+  border: none;
+  border: $borderWid solid $main-yellow-color;
+  color: $main-yellow-color;
+  border-radius: $borderRad;
+  background-color: #ffffff10;
+
+  &:hover {
+    background-color: $main-yellow-color;
+    color: #fff;
+    box-shadow: 0px 0px 4px 1px #ffffff84;
+  }
+}

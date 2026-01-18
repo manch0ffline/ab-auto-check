@@ -17,14 +17,14 @@ function Contacts() {
           </p>
         </div>
         <div className="contacts__blocks row g-3">
-          <div className="col-12 col-lg-6 col-xxl-3">
+          <div className="col-12 col-lg-6 col-xxl-3" data-aos="fade-right" data-aos-delay="200">
             <div className="contacts__block d-flex gap-3  justify-content-center">
               <div className="contacts__icon icon--insta"></div>
               <div className="">
                 <h3>Instagram</h3>
                 <a
                   className="contacts__link"
-                   target="_blank"
+                  target="_blank"
                   href="https://www.instagram.com/ab.autochek?igsh=MW1ha3dwd2pkYXAxMw%3D%3D&utm_source=qr"
                 >
                   НАПИСАТЬ
@@ -32,7 +32,7 @@ function Contacts() {
               </div>
             </div>
           </div>
-          <div className="col-12 col-lg-6 col-xxl-3">
+          <div className="col-12 col-lg-6 col-xxl-3" data-aos="fade-right">
             <div className="contacts__block d-flex gap-3 justify-content-center">
               <div className="contacts__icon icon--facebook"></div>
               <div className="">
@@ -47,14 +47,14 @@ function Contacts() {
               </div>
             </div>
           </div>
-          <div className="col-12 col-lg-6 col-xxl-3">
+          <div className="col-12 col-lg-6 col-xxl-3" data-aos="fade-left">
             <div className="contacts__block d-flex gap-3 justify-content-center">
               <div className="contacts__icon icon--telegram"></div>
               <div className="">
                 <h3>Telegram</h3>
                 <a
                   className="contacts__link"
-                   target="_blank"
+                  target="_blank"
                   href="https://t.me/ab_autochek"
                 >
                   НАПИСАТЬ
@@ -62,7 +62,7 @@ function Contacts() {
               </div>
             </div>
           </div>
-          <div className="col-12 col-lg-6 col-xxl-3">
+          <div className="col-12 col-lg-6 col-xxl-3" data-aos="fade-left" data-aos-delay="200">
             <div className="contacts__block d-flex gap-3 justify-content-center">
               <div className="contacts__icon icon--phone"></div>
               <div className="">

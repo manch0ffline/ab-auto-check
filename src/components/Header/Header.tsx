@@ -25,7 +25,7 @@ function Header() {
             </div>
           </div>
           <div className="header__button-container ">
-            <a href="#about-us" className="header__button--link ">
+            <a href="#contacts" className="header__button--link ">
               <button className="header__button  p-2 fs-5">
                 {t('button.submitRequest')}
               </button>

@@ -1,47 +1,53 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Contacts from './components/Contacts/Contacts';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Menu from './components/Menu/Menu';
-// import Prices from './components/Prices/Prices';
 import Services from './components/Services/Services';
 import ServicesDetails from './components/ServicesDetails/ServicesDetails';
 import './i18n';
-
-function goUp() {
-  const scrollToTopBtn = document.getElementById('scrollToTopBtn') as HTMLElement;
-
-  scrollToTopBtn.addEventListener('click', () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  });
-}
+// @ts-ignore
+import AOS from 'aos';
+import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicyю';
+import goUp from './utils/goUp';
 
 function App() {
-  const [activeDetail, setActiveDetail] = useState(1);
+  const [activeDetail, setActiveDetail] = useState(0);
+  const [privacyPolicy, setPrivacyPolicy] = useState(false);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800, // скорость анимации
+      easing: 'ease', // тип перехода
+      once: true,
+    });
+  }, []);
 
   return (
     <>
-      <div className="app x">
-        <Menu />
-        <Header />
-        <main className="app__main d-flex flex-column gap-5">
-          <a href="#" className="app__go-up">
-            <div
-              className="icon icon--go-up "
-              id="scrollToTopBtn"
-              onClick={() => goUp()}
-            ></div>
-          </a>
+      <div className="app">
+        {!privacyPolicy && (
+          <>
+            <Menu />
+            <Header />
+            <main className="app__main d-flex flex-column gap-5">
+              <a href="#" className="app__go-up">
+                <div
+                  className="icon icon--go-up "
+                  id="scrollToTopBtn"
+                  onClick={() => goUp()}
+                ></div>
+              </a>
 
-          <div className="app__line"></div>
-          <Services setActiveDetail={setActiveDetail}/>
-          <ServicesDetails activeDetail={activeDetail}/>
-          <Contacts />
-          <Footer />
-        </main>
+              <div className="app__line"></div>
+              <Services setActiveDetail={setActiveDetail} />
+              <ServicesDetails activeDetail={activeDetail} />
+              <Contacts />
+              <Footer setPrivacyPolicy={setPrivacyPolicy} />
+            </main>
+          </>
+        )}
+        {privacyPolicy && <PrivacyPolicy setPrivacyPolicy={setPrivacyPolicy} />}
       </div>
     </>
   );
