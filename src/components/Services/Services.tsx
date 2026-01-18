@@ -17,11 +17,11 @@ const Services: React.FC<Props> = ({ setActiveDetail }) => {
           {t('services.title')}
         </h2>
         <div className="row g-4">
-          {services.map((service) => (
+          {services.map((service, index) => (
             <div
               className="col-12 col-lg-4 col-xl-6 px-2"
               key={service.id}
-              data-aos="slide-up"
+              data-aos={index % 2 === 0 ? 'fade-right' : 'fade-left'}
             >
               <div className="services__block d-flex flex-column justify-content-between h-100">
                 <div className="d-flex gap-3 align-items-center services__block__top mb-2">
