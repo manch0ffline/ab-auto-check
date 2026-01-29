@@ -6,15 +6,6 @@ function Contacts() {
           <h2 className="fs-1 contacts__title text-center">
             Связатся c AB AutoCheck
           </h2>
-          <p
-            className="m-0 text-center"
-            style={{
-              color: '#f7fbe4',
-            }}
-          >
-            На связи личный владелец - Андрей <br /> Отвечаю лично. Без
-            менеджеров.
-          </p>
         </div>
         <div className="contacts__blocks row g-3">
           <div className="col-12 col-lg-6 col-xxl-3" data-aos="fade-right" data-aos-delay="200">

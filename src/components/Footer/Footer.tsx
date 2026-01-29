@@ -16,9 +16,7 @@ const Footer: React.FC<Props> = ({ setPrivacyPolicy }) => {
             <span className="m-0 p-0 footer__main-color footer__main-text">
               Познань и выезд по регионам
             </span>
-            <span className="m-0 p-0 footer__main-color footer__main-textr">
-              Личный автоподбор. Владелец - Андрей
-            </span>
+           
           </div>
         </div>
         <div className="footer__hr"></div>

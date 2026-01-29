@@ -11,6 +11,14 @@ const Navigation = () => {
         <li className="nav__item ">
           <a
             className="nav__link  d-flex justify-content-center align-items-center text-decoration-none"
+            href="#forWhom"
+          >
+           Для кого
+          </a>
+        </li>
+        <li className="nav__item ">
+          <a
+            className="nav__link  d-flex justify-content-center align-items-center text-decoration-none"
             href="#services"
           >
             Наши услуги

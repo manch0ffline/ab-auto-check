@@ -10,6 +10,7 @@ import './i18n';
 import AOS from 'aos';
 import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicyю';
 import goUp from './utils/goUp';
+import { AutoSelectionSlider } from './components/Slider/AutoSelectionSlider';
 
 function App() {
   const [activeDetail, setActiveDetail] = useState(0);
@@ -30,7 +31,7 @@ function App() {
           <>
             <Menu />
             <Header />
-            <main className="app__main d-flex flex-column gap-4">
+            <main className="app__main d-flex flex-column gap-5">
               <a href="#" className="app__go-up">
                 <div
                   className="icon icon--go-up "
@@ -41,6 +42,7 @@ function App() {
 
               <div className="app__line"></div>
               <Services setActiveDetail={setActiveDetail} />
+              <AutoSelectionSlider />
               <ServicesDetails activeDetail={activeDetail} />
               <Contacts />
               <Footer setPrivacyPolicy={setPrivacyPolicy} />

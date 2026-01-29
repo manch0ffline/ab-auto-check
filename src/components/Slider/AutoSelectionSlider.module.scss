@@ -1,0 +1,104 @@
+.auto-slider-section__container {
+  max-width: 1500px;
+
+  @media (min-width: 1500px) {
+    margin: 0 auto;
+
+  }
+}
+
+.auto-slider-section {
+  padding: 80px 20px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.auto-slider-section h2 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  opacity: 0.7;
+  margin-bottom: 40px;
+}
+
+/* Карточки слайдов */
+.slide-card {
+  height: 270px;
+  padding: 32px;
+  background-color: #11120dc6;
+  color: #fff;
+  border: 1px solid $main-yellow-color;
+  border-radius: 22px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.3s,
+    box-shadow 0.3s;
+  gap: 15px;
+}
+
+.slide-card h3 {
+  font-size: 22px;
+}
+
+.slide-card p {
+  font-size: 14px;
+  opacity: 0.8;
+  line-height: 1.4;
+}
+
+/* Центр и blur соседних */
+.swiper-slide {
+  opacity: 0.4;
+  transform: scale(0.8) !important;
+  transition: all 0.3s;
+}
+
+.swiper-slide-active {
+  opacity: 1;
+  transform: scale(1) !important;
+}
+
+.swiper-slide-active .slide-card {
+  box-shadow: 0 0 40px rgba(255, 215, 120, 0.35);
+  border-color: #ffd66b;
+}
+
+/* Pagination точки */
+.swiper-pagination-bullet {
+  background: #9b9b9b !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ffd66b !important;
+}
+
+/* Стрелки */
+.swiper-button-next,
+.swiper-button-prev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffd66b !important;
+  background-color: #00000084;
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  transform: scale(1.1);
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+  .slide-card {
+    height: 260px;
+    padding: 24px;
+  }
+}
