@@ -41,8 +41,8 @@ function App() {
               </a>
 
               <div className="app__line"></div>
-              <Services setActiveDetail={setActiveDetail} />
               <AutoSelectionSlider />
+              <Services setActiveDetail={setActiveDetail} />
               <ServicesDetails activeDetail={activeDetail} />
               <Contacts />
               <Footer setPrivacyPolicy={setPrivacyPolicy} />

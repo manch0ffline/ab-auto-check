@@ -7,7 +7,7 @@ const Navigation = () => {
         'nav h-100 d-flex justify-content-center align-items-center'
       )}
     >
-      <ul className="nav__list d-flex flex-column flex-lg-row gap-5 align-items-center list-unstyled m-0">
+      <ul className="nav__list d-flex flex-column flex-lg-row gap-4 align-items-center list-unstyled m-0">
         <li className="nav__item ">
           <a
             className="nav__link  d-flex justify-content-center align-items-center text-decoration-none"
