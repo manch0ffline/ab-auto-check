@@ -1,5 +1,5 @@
 import Navigation from '../Navigation/Navigation';
-import logo from '../../images/logo.png';
+import logo from '../../images/logo.svg';
 import type React from 'react';
 import ChangeLanguage from '../ChangeLanguage/ChangeLanguage';
 

@@ -9,6 +9,13 @@
     background-image: url('../images/icons/close-icon.png');
   }
 
+  &__type {
+    &--card {
+      height: 50px;
+       width: 50px;
+    }
+  }
+
   &--menu {
     height: 20px;
     width: 20px;
@@ -23,28 +30,67 @@
   }
 
   &--insta {
-    background-image: url('../images/icons/insta-icono.png');
+    background-image: url('../images/icons/insta-icon.svg');
   }
+
   &--facebook {
-    background-image: url('../images/icons/facebook-icon.png');
+    background-image: url('../images/icons/facebook-icon.svg');
   }
+
   &--phone {
-    background-image: url('../images/icons/phone-icon.png');
+    background-image: url('../images/icons/phone-icon.svg');
   }
+
   &--telegram {
-    background-image: url('../images/icons/telegram-icon.png');
+    background-image: url('../images/icons/telegram-icon.svg');
   }
+
   &--prem {
     background-image: url('../images/icons/prem-icon.svg');
   }
+
   &--calendar {
     background-image: url('../images/icons/calendar-icon.svg');
   }
+
   &--key {
     background-image: url('../images/icons/key-icon.svg');
   }
+
   &--one-time-diagnostics {
     background-image: url('../images/icons/one-time-diagnostics-icon.svg');
+  }
+
+  &--safety {
+    background-image: url('../images/icons/safety.svg');
+  }
+
+  &--car {
+    background-image: url('../images/icons/car-icon.svg');
+  }
+
+  &--money {
+    background-image: url('../images/icons/money-icon.svg');
+  }
+
+  &--time {
+    background-image: url('../images/icons/time-icon.svg');
+  }
+
+  &--examination {
+    background-image: url('../images/icons/examination--icon.svg');
+  }
+  &--best {
+    background-image: url('../images/icons/best-icon.svg');
+  }
+  &--info {
+    background-image: url('../images/icons/info-icon.svg');
+  }
+  &--location {
+    background-image: url('../images/icons/location-icon.svg');
+  }
+  &-- {
+    background-image: url('../images/icons');
   }
   &-- {
     background-image: url('../images/icons');

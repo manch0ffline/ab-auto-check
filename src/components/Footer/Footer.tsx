@@ -8,12 +8,12 @@ const Footer: React.FC<Props> = ({ setPrivacyPolicy }) => {
     <footer className="footer w-100 py-5 px-3" id="footer">
       <div className="container d-flex flex-column gap-4 ">
         <div className="footer__top">
-          <h2 className="fs-1 footer__title ">AB AutoCheck</h2>
-          <div className="footer__company-info d-flex flex-column gap-2">
-            <span className="m-0 p-0 footer__main-color footer__main-text">
+          <h2 className="title m-0">AB AutoCheck</h2>
+          <div className="footer__company-info d-flex flex-column gap-1">
+            <span className="m-0 p-0 subtitle">
               Автоподбор и проверка автомобилей в Польше
             </span>
-            <span className="m-0 p-0 footer__main-color footer__main-text">
+            <span className="m-0 p-0 subtitle">
               Познань и выезд по регионам
             </span>
            

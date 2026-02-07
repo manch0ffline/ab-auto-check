@@ -28,7 +28,7 @@
 .slide-card {
   height: 270px;
   padding: 32px;
-  background-color: #11120dc6;
+  background-color: #e9e9e9c6;
   color: #fff;
   border: 1px solid $main-yellow-color;
   border-radius: 22px;
@@ -43,12 +43,14 @@
 
 .slide-card h3 {
   font-size: 22px;
+  color: $dark-text-color;
 }
 
 .slide-card p {
   font-size: 14px;
   opacity: 0.8;
   line-height: 1.4;
+   color: $subtitle;
 }
 
 /* Центр и blur соседних */
@@ -64,17 +66,19 @@
 }
 
 .swiper-slide-active .slide-card {
-  box-shadow: 0 0 40px rgba(255, 215, 120, 0.35);
-  border-color: #ffd66b;
+  box-shadow: 0 0 10px #eab20858;
+  border-color: $yellowe-color;
 }
 
 /* Pagination точки */
 .swiper-pagination-bullet {
   background: #9b9b9b !important;
+
 }
 
 .swiper-pagination-bullet-active {
-  background: #ffd66b !important;
+  background: $yellowe-color!important;
+
 }
 
 /* Стрелки */
@@ -85,6 +89,7 @@
   align-items: center;
   color: #ffd66b !important;
   background-color: #00000084;
+  
   padding: 10px;
   border-radius: 50%;
   transition: all 0.3s;

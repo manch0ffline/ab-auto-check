@@ -1,6 +1,6 @@
 .privacy-policy {
-  background-color: $yellow-dark;
-  color: $yellow-light;
+  background-color:$bg-section;
+  color:$dark-text-color;
 
   &__btn {
     @include button();

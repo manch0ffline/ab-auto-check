@@ -12,7 +12,7 @@ const ServicesDetails: React.FC<Props> = ({ activeDetail }) => {
       id="services-details"
     >
       <div className="container d-flex flex-column gap-4">
-        <h2 className="fs-1 services-details__title text-center ">
+        <h2 className="title title--underline text-center ">
           Детали услуг
         </h2>
 

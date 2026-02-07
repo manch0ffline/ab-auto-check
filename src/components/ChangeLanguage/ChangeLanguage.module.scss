@@ -1,10 +1,10 @@
 .change-language {
-  &__button  {
+  &__button {
     transition: all 0.2s ease;
     text-transform: uppercase;
     border-radius: 10px;
     background-color: #00000000;
-    color: $top-bat-text;
+    color: $subtitle;
     border: none;
   }
 }

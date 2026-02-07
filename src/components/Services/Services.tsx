@@ -2,7 +2,6 @@ import { useTranslation } from 'react-i18next';
 import { services } from '../../data';
 import type React from 'react';
 
-
 type Props = {
   setActiveDetail: (el: number) => void;
 };
@@ -13,28 +12,44 @@ const Services: React.FC<Props> = ({ setActiveDetail }) => {
   return (
     <div className="services" id="services">
       <div className="container d-flex flex-column gap-5 services__container">
-        <h2 className="fs-1 services__title text-center ">
-          {t('services.title')}
-        </h2>
+        <h2 className="title text-center">{t('services.title')}</h2>
         <div className="row g-4">
           {services.map((service, index) => (
             <div
-              className="col-12 col-lg-4 col-xl-6 px-2"
+              className="col-12 col-lg-6 px-2"
               key={service.id}
               data-aos={index % 2 === 0 ? 'fade-right' : 'fade-left'}
             >
-              <div className="services__block d-flex flex-column justify-content-between h-100">
+              <div
+                className={`services__block ${service.recomended && 'services__block--recomended'} d-flex flex-column justify-content-between h-100`}
+              >
+                {service.recomended && (
+                  <div className="services__block--recomended__type">
+                    Самый популярный
+                  </div>
+                )}
                 <div className="d-flex gap-3 align-items-center services__block__top mb-2">
-                  <div className={`services__icon ${service.icon}`}></div>
+                  <div
+                    className={`services__icon-block  ${service.recomended && 'services__icon-block--recomended'}`}
+                  >
+                    <div className={`services__icon ${service.icon}`}></div>
+                  </div>
                   <h3 className="services__title-block">{service.title}</h3>
                 </div>
-                <p className="services__description m-0">
+                <p className="services__description mt-2">
                   {service.description}
                 </p>
-                <hr className="my-3" />
+                <div className="my-3 services__hr" />
                 <div className="d-flex flex-column h-100 justify-content-between gap-3">
-                  <p className="services__price m-0">
-                    Цена: <span> {service.price}</span>
+                  <p className="services__price-block m-0 d-flex flex-column">
+                    {service.bargain ? 'Цена от' : 'Цена'}
+                    <div className="">
+                      <span className="services__price"> {service.price}</span>
+                      <span className="services__bargain">
+                        {' '}
+                        {service.bargain}
+                      </span>
+                    </div>
                   </p>
 
                   <div className="d-flex gap- w-100 justify-content-between align-items-center">
@@ -58,12 +73,12 @@ const Services: React.FC<Props> = ({ setActiveDetail }) => {
           ))}
         </div>
         <p
-          className="m-0 text-center"
+          className="m-0 text-center fs-5"
           style={{
-            color: '#f7fbe4',
+            color: '#1e1701',
           }}
         >
-          Выезд за пределы Познани: <span>1.20 zł / км</span>
+          Выезд за пределы Познани: <span className='d-inline-block text-nowrap'>1 zł/км</span>
         </p>
       </div>
     </div>

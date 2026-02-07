@@ -1,34 +1,24 @@
 .services-details {
-  background-color: $yellow-dark;
 
   &__container {
-    background: linear-gradient(180deg,
-      $yellow-dark 0%,
-      #1a1c12 10%,
-      #1b190e 90%,
-      $yellow-dark 100%);
 
     padding: 20px;
   }
 
-  &__title {
-    color: $title-color;
-  }
-
   &__aditional-info {
-    color:$yellow-light;
+    color: $subtitle;
   }
 
   &__info {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-
+    gap: 3px;
 
     & p {
-      padding-left: 25px;
+      padding-left: 20px;
       position: relative;
-      color:$yellow-light;
+      font-weight: 400;
+      color: $subtitle;
       margin: 0;
 
 
@@ -37,9 +27,9 @@
         display: block;
         position: absolute;
         left: 0;
-        top: 2px;
-        height: 15px;
-        width: 15px;
+        top: 4px;
+        height: 13px;
+        width: 13px;
         background-image: url('../../images/icons/check-mark.png');
         background-size: contain;
         background-position: center;
@@ -61,32 +51,32 @@
   }
 
   &__salesman-info {
-    color: $yellow-light;
-
     & span {
-      font-size: 20px;
-      font-weight: 700;
+      font-size: 28px;
+      color: $yellowe-color;
+      font-weight: 300;
     }
 
     & p {
+      text-transform: uppercase;
+      color: $text-grey;
+      font-size: 13px;
       margin: 0;
-      font-weight: 500;
+      font-weight: 400;
     }
   }
 }
 
 .services-details .accordion-item {
-  background: #14160f;
   border-radius: 10px;
-  border-left: 3px solid #e6c45a;
   margin-bottom: 12px;
   overflow: hidden;
 }
 
 /* Header button */
 .services-details .accordion-button {
-  background: #14160f;
-  color: #f1f1f1;
+  background: #ffffff;
+  color: $dark-text-color;
   font-weight: 500;
   padding: 18px 20px;
   border: none;
@@ -94,13 +84,13 @@
 
 /* Hover */
 .services-details .accordion-button:hover {
-  background: #1b1f16;
+  // background: #1b1f16;
 }
 
 /* Active (open) */
 .services-details .accordion-button:not(.collapsed) {
-  background: #1b1f16;
-  color: #ffffff;
+  background: #ffffff;
+  color: $dark-text-color;
 }
 
 /* Remove default Bootstrap arrow bg */
@@ -109,8 +99,8 @@
   content: '';
   width: 8px;
   height: 8px;
-  border-right: 2px solid #e6c45a;
-  border-bottom: 2px solid #e6c45a;
+  border-right: 2px solid $dark-text-color;
+  border-bottom: 2px solid $dark-text-color;
   transform: rotate(45deg);
   transition: transform 0.25s ease;
 }
@@ -122,10 +112,8 @@
 
 /* Body */
 .services-details .accordion-body {
-  background: #1b1f16;
-  color: #dcdcdc;
+  background: #ffffff;
   padding: 18px 20px;
-  border-top: 1px solid rgba(230, 196, 90, 0.2);
   font-size: 14px;
   line-height: 1.6;
 }

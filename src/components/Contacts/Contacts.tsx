@@ -1,80 +1,99 @@
+import type { ContactItem } from "../../types/ContactItemType";
+
+const contacts: ContactItem[] = [
+  {
+    id: 'instagram',
+    title: 'Instagram',
+    icon: 'icon--insta',
+    link:
+      'https://www.instagram.com/ab.autochek?igsh=MW1ha3dwd2pkYXAxMw%3D%3D&utm_source=qr',
+    aos: 'fade-right',
+    delay: 200,
+    external: true,
+    label: 'НАПИСАТЬ',
+  },
+  {
+    id: 'facebook',
+    title: 'Facebook',
+    icon: 'icon--facebook',
+    link: 'https://www.facebook.com/share/16rSy6CEoP/?mibextid=wwXIfr',
+    aos: 'fade-right',
+    external: true,
+    label: 'НАПИСАТЬ',
+  },
+  {
+    id: 'telegram',
+    title: 'Telegram',
+    icon: 'icon--telegram',
+    link: 'https://t.me/ab_autochek',
+    aos: 'fade-left',
+    external: true,
+    label: 'НАПИСАТЬ',
+  },
+  {
+    id: 'phone',
+    title: 'Номер',
+    icon: 'icon--phone',
+    link: 'tel:+48537634858',
+    aos: 'fade-left',
+    label: '+48 537 634 858',
+  },
+];
+
+
 function Contacts() {
   return (
     <div className="contacts" id="contacts">
       <div className="container d-flex flex-column gap-5 services__container">
-        <div className="">
-          <h2 className="fs-1 contacts__title text-center">
-            Связатся c AB AutoCheck
-          </h2>
-        </div>
+
+        {/* Title */}
+        <h2 className="title text-center">
+          Связаться c AB AutoCheck
+        </h2>
+
+        {/* Blocks */}
         <div className="contacts__blocks row g-3">
-          <div className="col-12 col-lg-6 col-xxl-3" data-aos="fade-right" data-aos-delay="200">
-            <div className="contacts__block d-flex gap-3  justify-content-center">
-              <div className="contacts__icon icon--insta"></div>
-              <div className="">
-                <h3>Instagram</h3>
-                <a
-                  className="contacts__link"
-                  target="_blank"
-                  href="https://www.instagram.com/ab.autochek?igsh=MW1ha3dwd2pkYXAxMw%3D%3D&utm_source=qr"
-                >
-                  НАПИСАТЬ
-                </a>
+
+          {contacts.map(
+            ({ id, title, icon, link, aos, delay, external, label }) => (
+              <div
+                key={id}
+                className="col-12 col-lg-6 col-xxl-3"
+                data-aos={aos}
+                data-aos-delay={delay}
+              >
+                <div className="contacts__block d-flex flex-column gap-4 justify-content-center">
+
+                  <div className="d-flex gap-3 align-items-center">
+                   <div className="contacts__icon-block">
+                     <div className={`contacts__icon ${icon}`} />
+                   </div>
+                    <h3 className="m-0">{title}</h3>
+                  </div>
+
+                  <a
+                    className="contacts__link"
+                    href={link}
+                    target={external ? '_blank' : undefined}
+                    rel={external ? 'noopener noreferrer' : undefined}
+                  >
+                    {label}
+                  </a>
+
+                </div>
               </div>
-            </div>
-          </div>
-          <div className="col-12 col-lg-6 col-xxl-3" data-aos="fade-right">
-            <div className="contacts__block d-flex gap-3 justify-content-center">
-              <div className="contacts__icon icon--facebook"></div>
-              <div className="">
-                <h3>Facebook</h3>
-                <a
-                  className="contacts__link"
-                  target="_blank"
-                  href="https://www.facebook.com/share/16rSy6CEoP/?mibextid=wwXIfr"
-                >
-                  НАПИСАТЬ
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col-12 col-lg-6 col-xxl-3" data-aos="fade-left">
-            <div className="contacts__block d-flex gap-3 justify-content-center">
-              <div className="contacts__icon icon--telegram"></div>
-              <div className="">
-                <h3>Telegram</h3>
-                <a
-                  className="contacts__link"
-                  target="_blank"
-                  href="https://t.me/ab_autochek"
-                >
-                  НАПИСАТЬ
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col-12 col-lg-6 col-xxl-3" data-aos="fade-left" data-aos-delay="200">
-            <div className="contacts__block d-flex gap-3 justify-content-center">
-              <div className="contacts__icon icon--phone"></div>
-              <div className="">
-                <h3>Номер</h3>
-                <a className="contacts__link" href="tel:+48537634858">
-                  +48537634858
-                </a>
-              </div>
-            </div>
-          </div>
+            )
+          )}
+
         </div>
-        <p
-          className="m-0 text-center"
-          style={{
-            color: '#f7fbe4',
-          }}
-        >
+
+        {/* Info */}
+        <p className="m-0 text-center ">
           ⏱ Ответ в течение 10–15 минут
           <br />
-          Время работы Пн-Нд, с 9:00 до 22:00
+          Время работы Пн-Вс, с 9:00 до 22:00
         </p>
+
       </div>
     </div>
   );
