@@ -87,7 +87,7 @@ const ServicesDetails: React.FC<Props> = ({ activeDetail }) => {
                         </span>
                        }
 
-                        {item.includedServices.map((desc, index) => (
+                        {item.includedServices.map((_, index) => (
                           <p key={index}>{t(`servicesList.${item.id}.includedServices.${index}`)}</p>
                         ))}
                       </div>
