@@ -3,8 +3,9 @@ import { initReactI18next } from "react-i18next";
 import ru from '../public/locales/ru/translation.json'
 import ua from '../public/locales/ua/translation.json'
 import pl from '../public/locales/pl/translation.json'
+import eng from '../public/locales/eng/translation.json'
 
-const storedLanguage = localStorage.getItem('language') || 'ru';
+const storedLanguage = localStorage.getItem('language') || 'pl';
 
 i18n
   .use(initReactI18next) 
@@ -18,6 +19,9 @@ i18n
       },
       pl: {
         translation: pl
+      },
+       eng: {
+        translation: eng
       }
     },
     lng: storedLanguage, 

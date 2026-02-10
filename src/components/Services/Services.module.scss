@@ -14,10 +14,6 @@
     border-radius: 20px;
   }
 
-  &__title {
-    color: $title-color;
-  }
-
   &__block {
     transition: all 0.2s ease;
     background-color: #ffffff;
@@ -28,8 +24,8 @@
     padding: 25px;
 
     &--recomended {
-      border: 1px solid $yellowe-color;
-      box-shadow: 0px 0px 4px $yellowe-light;
+      border: 1px solid $yellow-color;
+      box-shadow: 0px 0px 4px $yellow-light;
       position: relative;
 
       &__type {
@@ -42,7 +38,7 @@
         padding-inline: 10px;
         color: $dark-text-color;
         font-weight: 700;
-        background-color: $yellowe-color;
+        background-color: $yellow-color;
         border-radius: 20px;
       }
     }
@@ -56,7 +52,7 @@
     margin: 0;
     font-size: 14px;
     font-weight: 400;
-    color:#4f4f4fd7;
+    color: #4f4f4fd7;
 
   }
 
@@ -66,7 +62,7 @@
     border-radius: 10px;
 
     &--recomended {
-      background-color: $yellowe-color;
+      background-color: $yellow-color;
     }
   }
 
@@ -123,13 +119,13 @@
   }
 
   &__price {
-    color: $yellowe-color;
+    color: $yellow-color;
     font-size: 20px;
   }
 
   &__bargain {
     font-size: 14px;
-     font-weight: 400;
+    font-weight: 400;
     color: $text-grey;
   }
 
@@ -138,10 +134,6 @@
     color: $dark-text-color;
     text-decoration: none;
     transition: color 0.2s ease;
-
-    &:hover {
-      color: $main-yellow-color;
-    }
   }
 
   &__btn {

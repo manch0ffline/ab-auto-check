@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import type { ContactItem } from "../../types/ContactItemType";
 
 const contacts: ContactItem[] = [
@@ -36,26 +37,25 @@ const contacts: ContactItem[] = [
     icon: 'icon--phone',
     link: 'tel:+48537634858',
     aos: 'fade-left',
-    label: '+48 537 634 858',
   },
 ];
 
-
 function Contacts() {
+  const { t } = useTranslation();
+
   return (
     <div className="contacts" id="contacts">
       <div className="container d-flex flex-column gap-5 services__container">
 
         {/* Title */}
         <h2 className="title text-center">
-          Связаться c AB AutoCheck
+          {t('contacts.title')}
         </h2>
 
         {/* Blocks */}
         <div className="contacts__blocks row g-3">
-
           {contacts.map(
-            ({ id, title, icon, link, aos, delay, external, label }) => (
+            ({ id, icon, link, aos, delay, external }) => (
               <div
                 key={id}
                 className="col-12 col-lg-6 col-xxl-3"
@@ -63,12 +63,11 @@ function Contacts() {
                 data-aos-delay={delay}
               >
                 <div className="contacts__block d-flex flex-column gap-4 justify-content-center">
-
                   <div className="d-flex gap-3 align-items-center">
-                   <div className="contacts__icon-block">
-                     <div className={`contacts__icon ${icon}`} />
-                   </div>
-                    <h3 className="m-0">{title}</h3>
+                    <div className="contacts__icon-block">
+                      <div className={`contacts__icon ${icon}`} />
+                    </div>
+                    <h3 className="m-0">{t(`contacts.servicesList.${id}.title`)}</h3>
                   </div>
 
                   <a
@@ -77,21 +76,19 @@ function Contacts() {
                     target={external ? '_blank' : undefined}
                     rel={external ? 'noopener noreferrer' : undefined}
                   >
-                    {label}
+                    {t(`contacts.servicesList.${id}.label`)}
                   </a>
-
                 </div>
               </div>
             )
           )}
-
         </div>
 
         {/* Info */}
         <p className="m-0 text-center ">
-          ⏱ Ответ в течение 10–15 минут
+          {t('contacts.responseTime')}
           <br />
-          Время работы Пн-Вс, с 9:00 до 22:00
+          {t('contacts.workingHours')}
         </p>
 
       </div>

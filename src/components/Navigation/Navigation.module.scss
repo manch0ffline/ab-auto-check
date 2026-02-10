@@ -15,9 +15,7 @@
 
     @media (min-width: 992px) {
       font-size: 15px;
-
     }
-
   }
 
   &__item {
@@ -28,10 +26,6 @@
     border-radius: 30px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-
-    &:hover {
-      color: $yellow-dark;
-    }
 
     @media (min-width: 992px) {
       @include linkHover();

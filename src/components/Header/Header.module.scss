@@ -8,9 +8,10 @@
   &__top-bat-bg {
     background-color: #f0f0f0;
   }
-   @media (min-width: 740px) {
-      background-position: 60% 0;
-     background-image: url(../../images/header-bg.webp);
+
+  @media (min-width: 740px) {
+    background-position: 60% 0;
+    background-image: url(../../images/header-bg.webp);
   }
 
   &__content {
@@ -31,8 +32,8 @@
 
     &--services {
       background-color: #eab20817;
-      border: 2px solid $yellowe-color;
-      color: $yellowe-color;
+      border: 2px solid $yellow-color;
+      color: $yellow-color;
     }
   }
 }

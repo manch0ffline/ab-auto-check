@@ -1,38 +1,246 @@
 {
   "header": {
-    "title": "Kompleksowy <br /> dobór samochodu na klucz",
-    "overview": "Pomożemy dobrać idealny <br /> samochód według twoich kryteriów"
+    "title": "Kompleksowy <br /> dobór auta pod klucz",
+    "overview": "Pomagamy wybrać idealne <br /> auto według Twoich kryteriów",
+    "buttons": { 
+      "submitRequest": "Zostaw zgłoszenie",
+      "services": "Usługi"
+    }
   },
-  "button": {
-    "submitRequest": "Zostaw wniosek"
+ "navigation": {
+  "forWhom": "Dla kogo",
+  "services": "Nasze usługi",
+  "details": "Szczegóły",
+  "contacts": "Kontakt"
+},
+  "autoSelection": {
+    "title": "Dla kogo pasuje dobór auta",
+    "subtitle": "Jeśli odnajdujesz siebie chociaż w jednym punkcie — dobór auta naprawdę Ci pomoże.",
+    "slides": {
+      "firstCarPurchase": {
+        "title": "Kupujesz auto po raz pierwszy",
+        "desc": "Nie znasz się na technicznych szczegółach i boisz się kupić wadliwy lub uszkodzony samochód."
+      },
+      "dontWantToRiskMoney": {
+        "title": "Nie chcesz ryzykować pieniędzmi",
+        "desc": "Zegar cofnięty i ukryte wypadki — eliminujemy takie opcje."
+      },
+      "valueYourTime": {
+        "title": "Cenisz swój czas",
+        "desc": "Nie musisz jeździć po dziesiątkach ogłoszeń — zrobimy to za Ciebie."
+      },
+      "buyUsedCar": {
+        "title": "Kupujesz auto z przebiegiem",
+        "desc": "Przeprowadzimy pełną kontrolę techniczną i prawną przed zakupem."
+      },
+      "bestCarInBudget": {
+        "title": "Najlepsze auto w swoim budżecie",
+        "desc": "Dobierzemy optymalną opcję pod względem ceny, stanu i wyposażenia."
+      },
+      "dontUnderstandTheMarket": {
+        "title": "Nie znasz rynku",
+        "desc": "Powiedzmy Ci realną wartość i pomożemy negocjować."
+      },
+      "locatedInAnotherCity": {
+        "title": "Jesteś w innym mieście",
+        "desc": "Sprawdzimy auto za Ciebie i zrobimy zdjęcia oraz wideo raport."
+      },
+      "dontWantToDealWithResellers": {
+        "title": "Nie chcesz mieć do czynienia z pośrednikami",
+        "desc": "Pracujemy tylko z uczciwymi sprzedawcami."
+      }
+    }
+  },
+  "servicesList": {
+    "1": {
+      "title": "Jednorazowa weryfikacja auta",
+      "price": "299zł",
+      "icon": "icon--one-time-diagnostics",
+      "description": "Kompleksowa techniczna kontrola samochodu przed zakupem",
+      "bargain": "+20% negocjacja",
+      "includedServices": [
+        "Kontrola nadwozia miernikiem grubości",
+        "Sprawdzenie silnika i zawieszenia",
+        "Kontrola skrzyni biegów",
+        "Diagnostyka komputerowa",
+        "Sprawdzanie wszystkich systemów pod kątem błędów",
+        "Ocena stanu technicznego",
+        "Pełny opis stanu pojazdu",
+        "Test-drive",
+        "Sprawdzenie VIN + historia",
+        "Raport foto i wideo",
+        "Rekomendacje zakupu"
+      ]
+    },
+    "2": {
+      "recomended": true,
+      "title": "Dobór auta 'Pod klucz'",
+      "price": "1200 zł",
+      "icon": "icon--key",
+      "description": "Cały proces wyszukiwania i sprawdzania auta bierzemy na siebie",
+      "bargain": "+20% negocjacja",
+      "includedServices": [
+        "Analiza rynku pod Twój budżet",
+        "5–10 zweryfikowanych opcji",
+        "Telefony do sprzedawców",
+        "Odrzucenie słabych ofert",
+        "Pełne wyjazdy i kontrole",
+        "Diagnostyka + sprawdzenie VIN",
+        "Negocjacje z sprzedawcą",
+        "Wsparcie transakcji",
+        "Przygotowanie dokumentów"
+      ]
+    },
+    "4": {
+      "title": "Premium dobór auta",
+      "price": "2490 zł",
+      "icon": "icon--prem",
+      "description": "Dla tych, którzy szukają pełnego komfortu i usług premium.",
+      "bargain": " ",
+      "includedServices": [
+        "Usługa 'Pod klucz'",
+        "Osobisty menedżer",
+        "Detailing (polerowanie, pranie chemiczne) przed wydaniem",
+        "Pomoc w uzyskaniu ubezpieczenia",
+        "Pełna konsultacja dotycząca użytkowania",
+        "Osobiste wsparcie klienta przez cały dzień"
+      ]
+    },
+    "5": {
+      "title": "Ekspert na dzień",
+      "price": "750 zł",
+      "icon": "icon--calendar",
+      "description": "Idealne do szybkiego wyboru i oceny kilku aut w ciągu jednego dnia",
+      "bargain": " ",
+      "includedServices": [
+        "Wizyta specjalisty",
+        "Nieograniczona liczba kontroli aut przez 10 godzin",
+        "Pełna diagnostyka każdego auta: nadwozie, silnik, zawieszenie, skrzynia biegów, elektryka, test-drive, diagnostyka komputerowa, sprawdzenie VIN + historia prawna",
+        "Analiza ogłoszeń przed podróżą",
+        "Uzgodnienie trasy według czasu",
+        "Negocjacje z sprzedawcami",
+        "Rekomendacje dla każdego auta",
+        "Końcowa rada: które auto jest bardziej opłacalne"
+      ],
+      "suitableFor": "Ocena kilku samochodów w ciągu dnia i szybka decyzja"
+    }
   },
   "services": {
     "title": "Nasze usługi",
-    "accordion": {
-      "sectionOne": {
-        "title": "Pełny dobór samochodu \"na klucz\"",
-        "description": "Przejmujemy cały proces: poszukiwanie, kontrola, diagnostyka, negocjacje, kontrola dokumentów i pomoc przy finalizacji transakcji. Klient otrzymuje tylko najlepsze opcje oraz finalny raport dotyczący wybranego samochodu"
+    "recommended": "Najbardziej popularna",
+    "priceFrom": "Cena od",
+    "price": "Cena",
+    "order": "Zamów",
+    "info": "Info",
+    "outOfPoznan": "Wjazd poza Poznań:",
+    "servicesList": { "$ref": "servicesList" }
+  },
+  "servicesDetails": {
+    "title": "Szczegóły usług",
+    "experience": "lat doświadczenia",
+    "checkedCars": "sprawdzonych samochodów",
+    "successfulPurchases": "udanych zakupów",
+    "location": "Poznań, Polska",
+    "servicesList": { "$ref": "servicesList" }
+  },
+  "contacts": {
+    "title": "Skontaktuj się z AB AutoCheck",
+    "responseTime": "⏱ Odpowiedź w ciągu 10–15 minut",
+    "workingHours": "Godziny pracy: pn-nd, od 9:00 do 22:00",
+    "servicesList": {
+      "instagram": {
+        "title": "Instagram",
+        "label": "NAPISZ"
       },
-      "sectionTwo": {
-        "title": "Jednorazowa kontrola wybranego samochodu",
-        "description": "Wyruszamy na konkretne ogłoszenie. Na miejscu sprawdzamy nadwozie, silnik, zawieszenie, elektronikę, wykonujemy diagnostykę, mierzymy grubość lakieru i wydajemy werdykt: brać czy nie brać"
+      "facebook": {
+        "title": "Facebook",
+        "label": "NAPISZ"
       },
-      "sectionThree": {
-        "title": "Diagnostyka przed zakupem",
-        "description": "Skupiamy się na stanie technicznym. Określamy ukryte problemy, rzeczywiste inwestycje w najbliższym czasie, oceniamy ryzyko. Pasuje, jeśli klient jest już prawie zdecydowany"
+      "telegram": {
+        "title": "Telegram",
+        "label": "NAPISZ"
       },
-      "sectionFour": {
-        "title": "Sprawdzanie dokumentów i czystości prawnej",
-        "description": "Sprawdzamy VIN, historię serwisową, zapisy ubezpieczeniowe, udział w wypadkach, zastawy, leasing, areszty. Gwarantujemy, że samochód jest prawnie czysty i bezpieczny do zakupu"
-      },
-      "sectionFive": {
-        "title": "Konsultacje online przed zakupem",
-        "description": "Oceniamy ogłoszenie zdalnie: po zdjęciach, opisie, filmie i historii. Od razu mówimy, czy warto jechać oglądać, czy lepiej nie tracić czasu"
-      },
-      "sectionSix": {
-        "title": "Ocena wartości samochodu",
-        "description": "Przeprowadzimy profesjonalną ocenę samochodu przed zakupem, aby zrozumieć jego rzeczywistą wartość"
+      "phone": {
+        "title": "Numer",
+        "label": "+48 537 634 858"
       }
+    }
+  },
+  "footer": {
+    "title": "AB AutoCheck",
+    "companyInfo1": "Dobór i kontrola samochodów w Polsce",
+    "companyInfo2": "Poznań i wyjazdy po regionach",
+    "navigation": "Nawigacja",
+     "forWhom": "Dla kogo",
+    "services": "Nasze usługi",
+    "more": "Więcej",
+    "contacts": "Kontakt",
+    "workingHours": "Godziny pracy",
+    "workingHoursTime": "Pn-Nd: 9:00 - 22:00",
+    "responseTimeLabel": "Średni czas odpowiedzi:",
+    "responseTime": "10-15 minut",
+    "results": "Nasze wyniki",
+    "checkedCars": "sprawdzonych samochodów",
+    "successfulPurchases": "udanych zakupów",
+    "yearsExperience": "lat doświadczenia",
+    "privacyPolicy": "Polityka prywatności",
+    "termsOfService": "Warunki świadczenia usług"
+  },
+  "privacyPolicy": {
+    "backButton": "Wstecz",
+    "title": "Polityka prywatności",
+    "intro": "Niniejsza Polityka prywatności wyjaśnia, jak ",
+    "companyName": "AB AutoCheck",
+    "section1": {
+      "title": "1. Postanowienia ogólne",
+      "content": "Strona internetowa oraz usługi są świadczone przez AB AutoCheck.",
+      "ownership": "Właściciel i wykonawca usług — Andrzej"
+    },
+    "section2": {
+      "title": "2. Zbieranie danych osobowych",
+      "content": "Na stronie AB AutoCheck:",
+      "item1": "nie są wykorzystywane formularze zgłoszeniowe;",
+      "item2": "nie odbywa się rejestracja użytkowników;",
+      "item3": "nie zbierane są ani przechowywane dane osobowe."
+    },
+    "section3": {
+      "title": "3. Kontakt z klientem",
+      "content": "Kontakt z klientami odbywa się wyłącznie na inicjatywę samego użytkownika za pośrednictwem następujących kanałów:",
+      "item1": "telefon;",
+      "item2": "Telegram;",
+      "item3": "Instagram;",
+      "item4": "Facebook."
+    },
+    "section4": {
+      "title": "4. Wykorzystanie informacji",
+      "content": "Informacje uzyskane w trakcie bezpośredniej komunikacji wykorzystywane są wyłącznie do:",
+      "item1": "kontaktu z klientem;",
+      "item2": "konsultacji;",
+      "item3": "świadczenia usług związanych z doborem i weryfikacją pojazdów."
+    },
+    "section5": {
+      "title": "5. Przechowywanie danych",
+      "content": "Strona AB AutoCheck nie przechowuje danych osobowych. Komunikacja oraz informacje przekazywane za pośrednictwem zewnętrznych serwisów (messengery, media społecznościowe) są przechowywane zgodnie z zasadami i polityką odpowiednich platform."
+    },
+    "section6": {
+      "title": "6. Przekazywanie danych osobowych stronom trzecim",
+      "content": "Dane osobowe klientów nie są przekazywane stronom trzecim, z wyjątkiem przypadków przewidzianych obowiązującym prawem."
+    },
+    "section7": {
+      "title": "7. Użycie cookies i analityki",
+      "content": "Na stronie AB AutoCheck:",
+      "item1": "nie są używane cookies;",
+      "item2": "nie są wykorzystywane systemy analityczne (Google Analytics, Facebook Pixel i inne)."
+    },
+    "section8": {
+      "title": "8. Prawa użytkownika",
+      "content": "Użytkownik ma prawo do:",
+      "item1": "zażądania informacji na temat swoich danych osobowych;",
+      "item2": "zażądania zaprzestania komunikacji i usunięcia przekazanych danych w ramach używanych kanałów kontaktowych."
+    },
+    "section9": {
+      "title": "9. Zmiany polityki",
+      "content": "Administracja strony zastrzega sobie prawo do wprowadzania zmian w tej Polityce prywatności bez wcześniejszego powiadomienia. Aktualna wersja jest zawsze dostępna na stronie."
     }
   }
 }

@@ -1,10 +1,13 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 type Props = {
   setPrivacyPolicy: (el: boolean) => void;
 };
 
 const PrivacyPolicy: React.FC<Props> = ({ setPrivacyPolicy }) => {
+  const { t } = useTranslation();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -16,110 +19,68 @@ const PrivacyPolicy: React.FC<Props> = ({ setPrivacyPolicy }) => {
           className="privacy-policy__btn mb-3"
           onClick={() => setPrivacyPolicy(false)}
         >
-          Назад
+          {t('privacyPolicy.backButton')}
         </button>
 
-        <h1>Политика конфиденциальности</h1>
+        <h1>{t('privacyPolicy.title')}</h1>
         <p>
-          Настоящая Политика конфиденциальности объясняет, как{' '}
-          <strong>AB AutoCheck</strong> обрабатывает персональные данные
-          пользователей сайта и клиентов сервиса автоподбора.
+          {t('privacyPolicy.intro')}
+          <strong>{t('privacyPolicy.companyName')}</strong>
         </p>
 
-        <h2>1. Общие положения</h2>
+        <h2>{t('privacyPolicy.section1.title')}</h2>
         <p>
-          Сайт и услуги предоставляет <strong>AB AutoCheck</strong>.<br />
-          Владелец и исполнитель услуг — <strong>Андрей</strong>.
+          {t('privacyPolicy.section1.content')}
         </p>
-        <p>
-          Мы ценим конфиденциальность наших пользователей и гарантируем, что не
-          собираем персональные данные через сайт.
-        </p>
+        <p>{t('privacyPolicy.section1.ownership')}</p>
 
-        <h2>2. Сбор персональных данных</h2>
-        <p>
-          На сайте <strong>AB AutoCheck</strong>:
-        </p>
+        <h2>{t('privacyPolicy.section2.title')}</h2>
+        <p>{t('privacyPolicy.section2.content')}</p>
         <ul>
-          <li>не используются формы заявок;</li>
-          <li>не осуществляется регистрация пользователей;</li>
-          <li>не собираются и не хранятся персональные данные.</li>
+          <li>{t('privacyPolicy.section2.item1')}</li>
+          <li>{t('privacyPolicy.section2.item2')}</li>
+          <li>{t('privacyPolicy.section2.item3')}</li>
         </ul>
 
-        <h2>3. Связь с клиентом</h2>
-        <p>
-          Связь с клиентами осуществляется исключительно по инициативе самого
-          пользователя через следующие каналы:
-        </p>
+        <h2>{t('privacyPolicy.section3.title')}</h2>
+        <p>{t('privacyPolicy.section3.content')}</p>
         <ul>
-          <li>телефон;</li>
-          <li>Telegram;</li>
-          <li>Instagram;</li>
-          <li>Facebook.</li>
-        </ul>
-        <p>
-          При обращении клиент может добровольно передать персональные данные
-          (имя, номер телефона, информацию об автомобиле и другие сведения),
-          необходимые для консультации или оказания услуг.
-        </p>
-
-        <h2>4. Использование информации</h2>
-        <p>
-          Информация, полученная в процессе личного общения, используется только
-          для:
-        </p>
-        <ul>
-          <li>связи с клиентом;</li>
-          <li>консультаций;</li>
-          <li>оказания услуг автоподбора и проверки автомобилей.</li>
+          <li>{t('privacyPolicy.section3.item1')}</li>
+          <li>{t('privacyPolicy.section3.item2')}</li>
+          <li>{t('privacyPolicy.section3.item3')}</li>
+          <li>{t('privacyPolicy.section3.item4')}</li>
         </ul>
 
-        <h2>5. Хранение данных</h2>
-        <p>
-          Сайт <strong>AB AutoCheck</strong> не осуществляет хранение
-          персональных данных.
-          <br />
-          Переписка и информация, переданные через сторонние сервисы
-          (мессенджеры и социальные сети), хранятся в рамках правил и политики
-          соответствующих платформ.
-        </p>
-
-        <h2>6. Передача данных третьим лицам</h2>
-        <p>
-          Персональные данные клиентов не передаются третьим лицам, за
-          исключением случаев, предусмотренных действующим законодательством.
-        </p>
-
-        <h2>7. Использование cookies и аналитики</h2>
-        <p>
-          На сайте <strong>AB AutoCheck</strong>:
-        </p>
+        <h2>{t('privacyPolicy.section4.title')}</h2>
+        <p>{t('privacyPolicy.section4.content')}</p>
         <ul>
-          <li>не используются cookies;</li>
-          <li>
-            не применяются системы аналитики (Google Analytics, Facebook Pixel и
-            другие).
-          </li>
+          <li>{t('privacyPolicy.section4.item1')}</li>
+          <li>{t('privacyPolicy.section4.item2')}</li>
+          <li>{t('privacyPolicy.section4.item3')}</li>
         </ul>
 
-        <h2>8. Права пользователя</h2>
-        <p>Пользователь имеет право:</p>
+        <h2>{t('privacyPolicy.section5.title')}</h2>
+        <p>{t('privacyPolicy.section5.content')}</p>
+
+        <h2>{t('privacyPolicy.section6.title')}</h2>
+        <p>{t('privacyPolicy.section6.content')}</p>
+
+        <h2>{t('privacyPolicy.section7.title')}</h2>
+        <p>{t('privacyPolicy.section7.content')}</p>
         <ul>
-          <li>запросить информацию о своих персональных данных;</li>
-          <li>
-            потребовать прекращения общения и удаления переданных данных в
-            рамках используемых каналов связи.
-          </li>
+          <li>{t('privacyPolicy.section7.item1')}</li>
+          <li>{t('privacyPolicy.section7.item2')}</li>
         </ul>
 
-        <h2>9. Изменения политики</h2>
-        <p>
-          Администрация сайта оставляет за собой право вносить изменения в
-          настоящую Политику конфиденциальности без предварительного
-          уведомления.
-          <br />
-          Актуальная версия всегда доступна на сайте.
-        </p>
+        <h2>{t('privacyPolicy.section8.title')}</h2>
+        <p>{t('privacyPolicy.section8.content')}</p>
+        <ul>
+          <li>{t('privacyPolicy.section8.item1')}</li>
+          <li>{t('privacyPolicy.section8.item2')}</li>
+        </ul>
+
+        <h2>{t('privacyPolicy.section9.title')}</h2>
+        <p>{t('privacyPolicy.section9.content')}</p>
       </div>
     </div>
   );

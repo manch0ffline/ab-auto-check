@@ -50,6 +50,16 @@ function ChangeLanguage() {
             Polski
           </button>
         </li>
+        <li>
+          <button
+            className="dropdown-item d-flex align-items-center gap-2"
+            onClick={() => {
+             changeLanguage('eng')
+            }}
+          >
+            English
+          </button>
+        </li>
       </ul>
     </div>
   );

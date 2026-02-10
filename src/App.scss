@@ -24,16 +24,17 @@
 
     right: 15px;
     bottom: 20px;
-    padding: 6px;
+    padding: 8px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color:$yellow-light;
+    border: 1px solid $yellow-color;
 
     & div {
       cursor: pointer;
     }
 
     &:hover {
-      background-color: #e6e5e5;
+      background-color: $yellow-hover-color;
       box-shadow: 0px 0px 2px 2px #fff;
     }
   }

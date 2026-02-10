@@ -1,19 +1,22 @@
-import type React from 'react';
+import { useTranslation } from 'react-i18next';
 import { services } from '../../data';
+import type React from 'react';
 
 type Props = {
   activeDetail: number;
 };
 
 const ServicesDetails: React.FC<Props> = ({ activeDetail }) => {
+  const { t } = useTranslation();
+
   return (
     <div
-      className="services-details  services-details__container w-100 py-5 px-3"
+      className="services-details services-details__container w-100 py-5 px-3"
       id="services-details"
     >
       <div className="container d-flex flex-column gap-4">
-        <h2 className="title title--underline text-center ">
-          Детали услуг
+        <h2 className="title title--underline text-center">
+          {t('servicesDetails.title')}
         </h2>
 
         <div className="row gy-4">
@@ -22,28 +25,28 @@ const ServicesDetails: React.FC<Props> = ({ activeDetail }) => {
               className="d-flex flex-column align-items-center"
               data-aos="fade-right"
             >
-              <span>10+ </span>лет опыта
+              <span>10+ </span> {t('servicesDetails.experience')}
             </p>
             <hr />
             <p
               className="d-flex flex-column align-items-center"
               data-aos="fade-right"
             >
-              <span>400+</span> провереных машин
+              <span>400+</span> {t('servicesDetails.checkedCars')}
             </p>
             <hr />
             <p
               className="d-flex flex-column align-items-center"
               data-aos="fade-right"
             >
-              <span>95% </span>удачных прокупок
+              <span>95% </span> {t('servicesDetails.successfulPurchases')}
             </p>
             <hr />
             <p
               className="d-flex flex-column align-items-center"
               data-aos="fade-right"
             >
-              Познань, Польша
+              {t('servicesDetails.location')}
             </p>
           </div>
           <div className="col-12 col-md-9">
@@ -62,12 +65,10 @@ const ServicesDetails: React.FC<Props> = ({ activeDetail }) => {
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target={`#${collapseId}`}
-                        aria-expanded={
-                          item.id === activeDetail ? 'true' : 'false'
-                        }
+                        aria-expanded={item.id === activeDetail ? 'true' : 'false'}
                         aria-controls={collapseId}
                       >
-                        {item.title}
+                        {t(`servicesList.${item.id}.title`)}
                       </button>
                     </h2>
 
@@ -80,18 +81,15 @@ const ServicesDetails: React.FC<Props> = ({ activeDetail }) => {
                       data-bs-parent="#accordionExample"
                     >
                       <div className="accordion-body services-details__info">
-                        <span className="m-0  services-details__aditional-info">
-                          {item?.suitableFor}
+                       {item.suitableFor && 
+                         <span className="m-0 services-details__aditional-info">
+                          {t(`servicesList.${item.id}.suitableFor`)}
                         </span>
+                       }
 
-                        {item.includedServices.map((desc) => (
-                          <>
-                            <p>{desc}</p>
-                          </>
+                        {item.includedServices.map((desc, index) => (
+                          <p key={index}>{t(`servicesList.${item.id}.includedServices.${index}`)}</p>
                         ))}
-                        <span className="m-0 services-details__aditional-info">
-                          {item?.guarantee}
-                        </span>
                       </div>
                     </div>
                   </div>

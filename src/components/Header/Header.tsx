@@ -30,12 +30,12 @@ function Header() {
           <div className="header__button-container d-flex gap-3 flex-column flex-sm-row">
             <a href="#contacts" className="header__button--link ">
               <button className="header__button  p-2 fs-5">
-                {t('button.submitRequest')}
+                {t('header.buttons.submitRequest')}
               </button>
             </a>
             <a href="#services" className="header__button--link ">
               <button className="header__button header__button--services  p-2 fs-5">
-               Услуги
+                {t('header.buttons.services')}
               </button>
             </a>
           </div>

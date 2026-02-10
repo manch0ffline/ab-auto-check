@@ -25,7 +25,7 @@ const Services: React.FC<Props> = ({ setActiveDetail }) => {
               >
                 {service.recomended && (
                   <div className="services__block--recomended__type">
-                    Самый популярный
+                    {t('services.recommended')}
                   </div>
                 )}
                 <div className="d-flex gap-3 align-items-center services__block__top mb-2">
@@ -34,20 +34,20 @@ const Services: React.FC<Props> = ({ setActiveDetail }) => {
                   >
                     <div className={`services__icon ${service.icon}`}></div>
                   </div>
-                  <h3 className="services__title-block">{service.title}</h3>
+                  <h3 className="services__title-block">{t(`servicesList.${service.id}.title`)}</h3>
                 </div>
                 <p className="services__description mt-2">
-                  {service.description}
+                  {t(`servicesList.${service.id}.description`)}
                 </p>
                 <div className="my-3 services__hr" />
                 <div className="d-flex flex-column h-100 justify-content-between gap-3">
                   <p className="services__price-block m-0 d-flex flex-column">
-                    {service.bargain ? 'Цена от' : 'Цена'}
+                    {service.bargain ? t('services.priceFrom') : t('services.price')}
                     <div className="">
                       <span className="services__price"> {service.price}</span>
                       <span className="services__bargain">
                         {' '}
-                        {service.bargain}
+                       { t(`servicesList.${service.id}.bargain`)}
                       </span>
                     </div>
                   </p>
@@ -57,14 +57,14 @@ const Services: React.FC<Props> = ({ setActiveDetail }) => {
                       href="#contacts"
                       className="services__btn services__btn--order"
                     >
-                      Заказать
+                      {t('services.order')}
                     </a>
                     <a
                       href="#services-details"
                       className="services__link"
                       onClick={() => setActiveDetail(service.id)}
                     >
-                      Инфо&nbsp;⟶
+                      {t('services.info')} ⟶
                     </a>
                   </div>
                 </div>
@@ -78,7 +78,7 @@ const Services: React.FC<Props> = ({ setActiveDetail }) => {
             color: '#1e1701',
           }}
         >
-          Выезд за пределы Познани: <span className='d-inline-block text-nowrap'>1 zł/км</span>
+          {t('services.outOfPoznan')} <span className='d-inline-block text-nowrap'>1 zł/км</span>
         </p>
       </div>
     </div>

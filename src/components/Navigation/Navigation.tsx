@@ -1,10 +1,12 @@
 import cn from 'classnames';
+import { useTranslation } from 'react-i18next';
 
 const Navigation = () => {
+  const { t } = useTranslation();
   return (
     <nav
       className={cn(
-        'nav h-100 d-flex justify-content-center align-items-center'
+        'nav h-100 d-flex justify-content-center align-items-center',
       )}
     >
       <ul className="nav__list d-flex flex-column flex-lg-row gap-3 align-items-center list-unstyled m-0">
@@ -13,7 +15,7 @@ const Navigation = () => {
             className="nav__link  d-flex justify-content-center align-items-center text-decoration-none"
             href="#forWhom"
           >
-           Для кого
+            {t('navigation.forWhom')}
           </a>
         </li>
         <li className="nav__item ">
@@ -21,7 +23,7 @@ const Navigation = () => {
             className="nav__link  d-flex justify-content-center align-items-center text-decoration-none"
             href="#services"
           >
-            Наши услуги
+           {t('navigation.services')}
           </a>
         </li>
         <li className="nav__item">
@@ -29,7 +31,7 @@ const Navigation = () => {
             className="nav__link  d-flex align-items-center text-decoration-none"
             href="#services-details"
           >
-           Подробнее
+            {t('navigation.details')}
           </a>
         </li>
         <li className="nav__item">
@@ -37,7 +39,7 @@ const Navigation = () => {
             className="nav__link  d-flex align-items-center text-decoration-none"
             href="#contacts"
           >
-            Контакты
+            {t('navigation.contacts')}
           </a>
         </li>
       </ul>

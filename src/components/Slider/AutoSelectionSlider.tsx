@@ -4,6 +4,7 @@ import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import { useTranslation } from 'react-i18next';
 
 type Slide = {
   title: string;
@@ -13,57 +14,58 @@ type Slide = {
 
 const slides: Slide[] = [
   {
-    title: 'Покупаете автомобиль впервые',
-    desc: 'Не разбираетесь в технических нюансах и боитесь купить проблемный или битый авто.',
+    title: 'firstCarPurchase',
+    desc: 'dontKnowTechnicalities',
     icon: 'icon--car',
   },
   {
-    title: 'Не хотите рисковать деньгами',
-    desc: 'Скрученный пробег и скрытые ДТП — мы исключаем такие варианты.',
+    title: 'dontWantToRiskMoney',
+    desc: 'odometerRollbackAndHiddenAccidents',
     icon: 'icon--money',
   },
   {
-    title: 'Цените своё время',
-    desc: 'Не нужно ездить по десяткам объявлений — мы сделаем всё за вас.',
+    title: 'valueYourTime',
+    desc: 'noNeedToCheckMultipleAds',
     icon: 'icon--time',
   },
   {
-    title: 'Покупаете авто с пробегом',
-    desc: 'Проведём полную техническую и юридическую проверку перед покупкой.',
+    title: 'buyUsedCar',
+    desc: 'fullTechnicalAndLegalCheck',
     icon: 'icon--examination',
   },
   {
-    title: 'Лучший авто в своём бюджете',
-    desc: 'Подберём оптимальный вариант по цене, состоянию и комплектации.',
+    title: 'bestCarInBudget',
+    desc: 'optimumChoiceByPriceConditionAndConfiguration',
     icon: 'icon--best',
   },
   {
-    title: 'Не разбираетесь в рынке',
-    desc: 'Подскажем реальную стоимость и поможем сторговаться.',
+    title: 'dontUnderstandTheMarket',
+    desc: 'weWillTellYouRealCostAndHelpNegotiate',
     icon: 'icon--info',
   },
   {
-    title: 'Находитесь в другом городе',
-    desc: 'Проверим авто за вас и сделаем фото- и видеоотчёт.',
+    title: 'locatedInAnotherCity',
+    desc: 'weCheckCarForYouAndProvidePhotoAndVideoReport',
     icon: 'icon--location',
   },
   {
-    title: 'Не хотите связываться с перекупами',
-    desc: 'Работаем только с честными продавцами.',
+    title: 'dontWantToDealWithResellers',
+    desc: 'weWorkOnlyWithHonestSellers',
     icon: 'icon--safety',
   },
 ];
 
 export const AutoSelectionSlider = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="auto-slider-section__container" id="forWhom">
       <section className="auto-slider-section">
         <h2 className="title title--underline">
-          Для кого подходит автоподбор
+          {t('autoSelection.title')}
         </h2>
         <p className="subtitle">
-          Если узнаёте себя хотя бы в одном пункте — автоподбор вам реально
-          поможет.
+          {t('autoSelection.subtitle')}
         </p>
 
         <Swiper
@@ -86,8 +88,8 @@ export const AutoSelectionSlider = () => {
                 <div
                   className={`icon__type--card icon ${slide.icon}`}
                 ></div>
-                <h3>{slide.title}</h3>
-                <p>{slide.desc}</p>
+                <h3>{t(`autoSelection.slides.${slide.title}.title`)}</h3>
+                <p>{t(`autoSelection.slides.${slide.title}.desc`)}</p>
               </div>
             </SwiperSlide>
           ))}

@@ -1,0 +1,247 @@
+{
+  "header": {
+    "title": "Comprehensive <br /> car selection service",
+    "overview": "We will help you find the perfect <br /> car based on your criteria",
+    "buttons": { 
+      "submitRequest": "Submit Request",
+      "services": "Services"
+    }
+  },
+  "navigation": {
+    "forWhom": "For Whom",
+    "services": "Our Services",
+    "details": "More Details",
+    "contacts": "Contacts"
+  },
+  "autoSelection": {
+    "title": "Who the car selection service is for",
+    "subtitle": "If you identify with at least one of these points, car selection will truly help you.",
+    "slides": {
+      "firstCarPurchase": {
+        "title": "Buying a car for the first time",
+        "desc": "You are not familiar with the technical details and are afraid of buying a problematic or damaged car."
+      },
+      "dontWantToRiskMoney": {
+        "title": "Don't want to risk your money",
+        "desc": "Odometer rollback and hidden accidents — we exclude such options."
+      },
+      "valueYourTime": {
+        "title": "Value your time",
+        "desc": "No need to visit dozens of ads — we will do everything for you."
+      },
+      "buyUsedCar": {
+        "title": "Buying a used car",
+        "desc": "We conduct a complete technical and legal check before the purchase."
+      },
+      "bestCarInBudget": {
+        "title": "The best car within your budget",
+        "desc": "We will find the best option based on price, condition, and configuration."
+      },
+      "dontUnderstandTheMarket": {
+        "title": "Don't understand the market",
+        "desc": "We will advise you on the real value and help you negotiate."
+      },
+      "locatedInAnotherCity": {
+        "title": "Located in another city",
+        "desc": "We will check the car for you and provide photo and video reports."
+      },
+      "dontWantToDealWithResellers": {
+        "title": "Don't want to deal with resellers",
+        "desc": "We work only with honest sellers."
+      }
+    }
+  },
+  "servicesList": {
+    "1": {
+      "title": "One-time car inspection",
+      "price": "299zł",
+      "icon": "icon--one-time-diagnostics",
+      "description": "Comprehensive technical inspection of the car before purchase",
+      "bargain": "+20% negotiable",
+      "includedServices": [
+        "Body check with a thickness gauge",
+        "Engine and suspension inspection",
+        "Transmission check",
+        "Computer diagnostics",
+        "System error checks",
+        "Technical condition assessment",
+        "Full description of the car's condition",
+        "Test drive",
+        "VIN check + history",
+        "Photo and video report",
+        "Purchase recommendations"
+      ]
+    },
+    "2": {
+      "recomended": true,
+      "title": "Car selection 'Turnkey'",
+      "price": "1200 zł",
+      "icon": "icon--key",
+      "description": "We fully take care of the process of car search and inspection",
+      "bargain": "+20% negotiable",
+      "includedServices": [
+        "Market analysis based on your budget",
+        "5-10 verified options",
+        "Calls to sellers",
+        "Filtering out weak options",
+        "Full inspections and checkups",
+        "Diagnostics + VIN check",
+        "Negotiation with sellers",
+        "Transaction support",
+        "Document preparation"
+      ]
+    },
+    "4": {
+      "title": "Premium car selection",
+      "price": "2490 zł",
+      "icon": "icon--prem",
+      "description": "For those who want complete comfort and premium service.",
+      "bargain": " ",
+      "includedServices": [
+        "Full 'turnkey' selection service",
+        "Personal manager",
+        "Detailing (polishing, cleaning) before delivery",
+        "Help with insurance",
+        "Full consultation on operation",
+        "Personal assistance for the whole day"
+      ]
+    },
+    "5": {
+      "title": "Expert for a day",
+      "price": "750 zł",
+      "icon": "icon--calendar",
+      "description": "Perfect for quick selection and evaluation of several cars in one day",
+      "bargain": " ",
+      "includedServices": [
+        "Expert visit",
+        "Unlimited number of car inspections within 10 hours",
+        "Full diagnostics of each car: body, engine, suspension, gearbox, electronics, test drive, computer diagnostics, VIN check + legal history",
+        "Ad analysis before the trip",
+        "Route coordination by time",
+        "Negotiation with sellers",
+        "Recommendations for each car",
+        "Final advice: which car is the best deal"
+      ],
+      "suitableFor": "Inspection of several cars in a day and quick decision-making"
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "recommended": "Most Popular",
+    "priceFrom": "Price from",
+    "price": "Price",
+    "order": "Order",
+    "info": "Info",
+    "outOfPoznan": "Travel outside of Poznań:",
+    "servicesList": { "$ref": "servicesList" }
+  },
+  "servicesDetails": {
+    "title": "Service Details",
+    "experience": "years of experience",
+    "checkedCars": "checked cars",
+    "successfulPurchases": "successful purchases",
+    "location": "Poznań, Poland",
+    "servicesList": { "$ref": "servicesList" }
+  },
+  "contacts": {
+    "title": "Contact AB AutoCheck",
+    "responseTime": "⏱ Response within 10–15 minutes",
+    "workingHours": "Working hours: Mon-Sun, 9:00 AM - 10:00 PM",
+    "servicesList": {
+      "instagram": {
+        "title": "Instagram",
+        "label": "WRITE"
+      },
+      "facebook": {
+        "title": "Facebook",
+        "label": "WRITE"
+      },
+      "telegram": {
+        "title": "Telegram",
+        "label": "WRITE"
+      },
+      "phone": {
+        "title": "Phone",
+        "label": "+48 537 634 858"
+      }
+    }
+  },
+  "footer": {
+    "title": "AB AutoCheck",
+    "companyInfo1": "Car selection and inspection services in Poland",
+    "companyInfo2": "Poznań and regional trips",
+    "navigation": "Navigation",
+    "forWhom": "For Whom",
+    "services": "Our Services",
+    "more": "More",
+    "contacts": "Contacts",
+    "workingHours": "Working Hours",
+    "workingHoursTime": "Mon-Sun: 9:00 AM - 10:00 PM",
+    "responseTimeLabel": "Average response time:",
+    "responseTime": "10-15 minutes",
+    "results": "Our Results",
+    "checkedCars": "checked cars",
+    "successfulPurchases": "successful purchases",
+    "yearsExperience": "years of experience",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  },
+  "privacyPolicy": {
+    "backButton": "Back",
+    "title": "Privacy Policy",
+    "intro": "This Privacy Policy explains how ",
+    "companyName": "AB AutoCheck",
+    "section1": {
+      "title": "1. General Provisions",
+      "content": "The website and services are provided by AB AutoCheck.",
+      "ownership": "The owner and service provider — Andrey"
+    },
+    "section2": {
+      "title": "2. Collection of Personal Data",
+      "content": "On the AB AutoCheck website:",
+      "item1": "application forms are not used;",
+      "item2": "user registration is not carried out;",
+      "item3": "personal data is not collected and stored."
+    },
+    "section3": {
+      "title": "3. Communication with the Client",
+      "content": "Communication with clients is carried out solely at the initiative of the user through the following channels:",
+      "item1": "phone;",
+      "item2": "Telegram;",
+      "item3": "Instagram;",
+      "item4": "Facebook."
+    },
+    "section4": {
+      "title": "4. Use of Information",
+      "content": "Information received during personal communication is used only for:",
+      "item1": "communication with the client;",
+      "item2": "consultations;",
+      "item3": "providing car selection and inspection services."
+    },
+    "section5": {
+      "title": "5. Data Storage",
+      "content": "The AB AutoCheck website does not store personal data. Correspondence and information transmitted via third-party services (messengers and social networks) are stored according to the rules and policies of the respective platforms."
+    },
+    "section6": {
+      "title": "6. Transfer of Data to Third Parties",
+      "content": "Personal data of clients is not transferred to third parties, except in cases provided for by applicable law."
+    },
+    "section7": {
+      "title": "7. Use of Cookies and Analytics",
+      "content": "On the AB AutoCheck website:",
+      "item1": "cookies are not used;",
+      "item2": "analytical systems (Google Analytics, Facebook Pixel, etc.) are not applied."
+    },
+    "section8": {
+      "title": "8. User Rights",
+      "content": "The user has the right to:",
+      "item1": "request information about their personal data;",
+      "item2": "demand the cessation of communication and deletion of transmitted data within the used communication channels."
+    },
+    "section9": {
+      "title": "9. Changes to the Policy",
+      "content": "The website administration reserves the right to make changes to this Privacy Policy without prior notice. The current version is always available on the website."
+    }
+  }
+
+}
