@@ -41,7 +41,7 @@ const Services: React.FC<Props> = ({ setActiveDetail }) => {
                 </p>
                 <div className="my-3 services__hr" />
                 <div className="d-flex flex-column h-100 justify-content-between gap-3">
-                  <p className="services__price-block m-0 d-flex flex-column">
+                  <div className="services__price-block m-0 d-flex flex-column">
                     {service.bargain ? t('services.priceFrom') : t('services.price')}
                     <div className="">
                       <span className="services__price"> {service.price}</span>
@@ -50,7 +50,7 @@ const Services: React.FC<Props> = ({ setActiveDetail }) => {
                        { t(`servicesList.${service.id}.bargain`)}
                       </span>
                     </div>
-                  </p>
+                  </div>
 
                   <div className="d-flex gap- w-100 justify-content-between align-items-center">
                     <a
