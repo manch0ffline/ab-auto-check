@@ -6,7 +6,7 @@ const contacts: ContactItem[] = [
     id: 'instagram',
     title: 'Instagram',
     icon: 'icon--insta',
-    link: 'https://www.instagram.com/ab.autochek?igsh=MW1ha3dwd2pkYXAxMw%3D%3D&utm_source=qr',
+    link: 'https://www.instagram.com/ab.autochek?igsh=MW5jaXludzBsa3lnbA==',
     aos: 'fade-right',
     delay: 200,
     external: true,
